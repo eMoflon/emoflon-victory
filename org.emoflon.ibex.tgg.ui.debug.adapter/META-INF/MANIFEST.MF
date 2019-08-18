@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.emoflon.ibex.tgg.ui.debug.adapter;singleton:=true
+Bundle-Name: eMoflon::IBeX Victory Debugger Adapter
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: eMoflon::IBeX Developers
+Require-Bundle: net.sourceforge.plantuml.lib;visibility:=reexport,
+ com.google.guava,
+ org.eclipse.swt;visibility:=reexport,
+ org.emoflon.ibex.tgg.ide;bundle-version="1.0.0",
+ org.emoflon.ibex.tgg.editor;bundle-version="1.0.0",
+ org.emoflon.ibex.tgg.core.language;bundle-version="1.0.0",
+ org.moflon.core.ui;bundle-version="1.3.0",
+ org.emoflon.ibex.tgg.core.runtime;bundle-version="1.0.0",
+ org.emoflon.ibex.tgg.ide.democles;bundle-version="1.0.0",
+ org.emoflon.ibex.tgg.ui.debug;bundle-version="1.0.0"
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Export-Package: org.emoflon.ibex.tgg.ui.debug.adapter.TGGAdpater,
+ org.emoflon.ibex.tgg.ui.debug.adapter.core
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: org.emoflon.ibex.tgg.ui.debug.api
+
+
+
