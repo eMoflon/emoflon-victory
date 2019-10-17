@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Bundle-SymbolicName: org.emoflon.victory.ui;singleton:=true
-Bundle-Name: eMoflon::IBeX Victory Debugger
+Bundle-Name: eMoflon Victory Debugger
 Bundle-Version: 1.0.0.qualifier
-Bundle-Vendor: eMoflon::IBeX Developers
+Bundle-Vendor: eMoflon Developers
 Require-Bundle: net.sourceforge.plantuml.lib;visibility:=reexport,
  com.google.guava,
  org.eclipse.swt;visibility:=reexport,
@@ -13,16 +13,17 @@ Require-Bundle: net.sourceforge.plantuml.lib;visibility:=reexport,
 Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .
-Export-Package: org.emoflon.ibex.tgg.ui.debug.api,
- org.emoflon.ibex.tgg.ui.debug.api.enums,
- org.emoflon.ibex.tgg.ui.debug.api.impl,
- org.emoflon.ibex.tgg.ui.debug.core,
- org.emoflon.ibex.tgg.ui.debug.options,
- org.emoflon.ibex.tgg.ui.debug.plantuml,
- org.emoflon.ibex.tgg.ui.debug.views,
- org.emoflon.ibex.tgg.ui.debug.views.treeContent,
- org.emoflon.ibex.tgg.ui.debug.views.treeContent.matchList,
- org.emoflon.ibex.tgg.ui.debug.views.treeContent.protocol,
- org.emoflon.ibex.tgg.ui.debug.views.visualisable
-Automatic-Module-Name: org.emoflon.ibex.tgg.ide
+Export-Package: org.emoflon.victory.ui.api,
+ org.emoflon.victory.ui.api.enums,
+ org.emoflon.victory.ui.api.impl,
+ org.emoflon.victory.ui.core,
+ org.emoflon.victory.ui.options,
+ org.emoflon.victory.ui.plantuml,
+ org.emoflon.victory.ui.util,
+ org.emoflon.victory.ui.views,
+ org.emoflon.victory.ui.views.treeContent,
+ org.emoflon.victory.ui.views.treeContent.matchList,
+ org.emoflon.victory.ui.views.treeContent.protocol,
+ org.emoflon.victory.ui.views.visualisable
 Bundle-RequiredExecutionEnvironment: JavaSE-12
+Automatic-Module-Name: org.emoflon.victory.ui
