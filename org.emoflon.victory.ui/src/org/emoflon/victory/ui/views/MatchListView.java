@@ -201,7 +201,7 @@ public class MatchListView extends Composite implements ISharedFocusElement {
 				try {
 					chosenMatch.wait();
 				} catch (InterruptedException pIE) {
-					// TODO calling thread was interrupted. What now..?
+					// Calling thread was interrupted
 				}
 			Match match = chosenMatch[0];
 			chosenMatch[0] = null;
