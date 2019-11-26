@@ -181,7 +181,7 @@ class PlantUMLGenerator {
 		val arrow = switch (e.type) {
 			case EdgeType.CORR: corrEdgeArrow
 			case EdgeType.MATCH: objectMappingArrow
-			case EdgeType.NORMAL: edgeArrow
+			default : edgeArrow
 		}
 
 		val label = e.getEdgeLabel(edgeLabelOptions)
