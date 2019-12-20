@@ -25,5 +25,5 @@ Export-Package: org.emoflon.victory.ui.api,
  org.emoflon.victory.ui.views.treeContent.matchList,
  org.emoflon.victory.ui.views.treeContent.protocol,
  org.emoflon.victory.ui.views.visualisable
-Bundle-RequiredExecutionEnvironment: JavaSE-12
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: org.emoflon.victory.ui
