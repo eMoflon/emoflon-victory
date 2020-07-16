@@ -9,7 +9,7 @@ Require-Bundle: net.sourceforge.plantuml.lib;visibility:=reexport,
  org.eclipse.jface;visibility:=reexport,
  org.eclipse.equinox.common;visibility:=reexport,
  org.eclipse.xtend.lib;bundle-version="2.14.0",
- org.apache.commons.lang3;bundle-version="3.1.0"
+ org.emoflon.core.dependencies;bundle-version="1.0.0"
 Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .
