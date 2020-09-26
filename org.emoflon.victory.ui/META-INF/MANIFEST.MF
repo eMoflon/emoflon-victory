@@ -2,14 +2,13 @@ Manifest-Version: 1.0
 Bundle-SymbolicName: org.emoflon.victory.ui;singleton:=true
 Bundle-Name: eMoflon Victory Debugger
 Bundle-Version: 1.0.0.qualifier
-Bundle-Vendor: eMoflon Developers
 Require-Bundle: net.sourceforge.plantuml.lib;visibility:=reexport,
  com.google.guava,
  org.eclipse.swt;visibility:=reexport,
  org.eclipse.jface;visibility:=reexport,
  org.eclipse.equinox.common;visibility:=reexport,
  org.eclipse.xtend.lib;bundle-version="2.14.0",
- org.apache.commons.lang3;bundle-version="3.1.0"
+ org.apache.commons.lang
 Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .
@@ -25,5 +24,5 @@ Export-Package: org.emoflon.victory.ui.api,
  org.emoflon.victory.ui.views.treeContent.matchList,
  org.emoflon.victory.ui.views.treeContent.protocol,
  org.emoflon.victory.ui.views.visualisable
-Bundle-RequiredExecutionEnvironment: JavaSE-12
 Automatic-Module-Name: org.emoflon.victory.ui
+Bundle-RequiredExecutionEnvironment: JavaSE-13

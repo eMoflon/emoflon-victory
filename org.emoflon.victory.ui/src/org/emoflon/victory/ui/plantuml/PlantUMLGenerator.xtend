@@ -3,7 +3,7 @@ package org.emoflon.victory.ui.plantuml
 import java.util.ArrayList
 import java.util.Map
 import java.util.UUID
-import org.apache.commons.lang3.StringUtils
+import org.apache.commons.lang.StringUtils
 import org.emoflon.victory.ui.api.DataProvider
 import org.emoflon.victory.ui.api.Edge
 import org.emoflon.victory.ui.api.Graph
