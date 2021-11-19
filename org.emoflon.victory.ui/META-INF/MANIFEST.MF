@@ -25,4 +25,4 @@ Export-Package: org.emoflon.victory.ui.api,
  org.emoflon.victory.ui.views.treeContent.protocol,
  org.emoflon.victory.ui.views.visualisable
 Automatic-Module-Name: org.emoflon.victory.ui
-Bundle-RequiredExecutionEnvironment: JavaSE-15
+Bundle-RequiredExecutionEnvironment: JavaSE-16
