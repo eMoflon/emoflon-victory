@@ -3,7 +3,6 @@ package org.emoflon.victory.ui.plantuml
 import java.util.ArrayList
 import java.util.Map
 import java.util.UUID
-import org.apache.commons.lang.StringUtils
 import org.emoflon.victory.ui.api.DataProvider
 import org.emoflon.victory.ui.api.Edge
 import org.emoflon.victory.ui.api.Graph
@@ -13,6 +12,7 @@ import org.emoflon.victory.ui.api.enums.Domain
 import org.emoflon.victory.ui.api.enums.EdgeType
 import org.emoflon.victory.ui.options.IUserOptions
 import org.emoflon.victory.ui.options.UserOptionsManager.VisualizationLabelOptions
+import org.emoflon.ibex.common.StringUtils
 
 class PlantUMLGenerator {
 	static val createColor = "SpringGreen"
