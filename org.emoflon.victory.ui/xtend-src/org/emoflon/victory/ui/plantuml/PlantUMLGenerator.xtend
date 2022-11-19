@@ -12,7 +12,6 @@ import org.emoflon.victory.ui.api.enums.Domain
 import org.emoflon.victory.ui.api.enums.EdgeType
 import org.emoflon.victory.ui.options.IUserOptions
 import org.emoflon.victory.ui.options.UserOptionsManager.VisualizationLabelOptions
-import org.emoflon.ibex.common.StringUtils
 
 class PlantUMLGenerator {
 	static val createColor = "SpringGreen"
@@ -193,7 +192,7 @@ class PlantUMLGenerator {
 	private def static String[] getStereotypes(Node n) {
 		val stereotypes = new ArrayList<String>();
 		stereotypes.add(switch (n.domain) {
-			case Domain.SRC: "SRC"
+			case Domain.SRC: "SRC" 
 			case Domain.TRG: "TRG"
 		})
 		stereotypes.add(switch (n.action) {
@@ -207,11 +206,16 @@ class PlantUMLGenerator {
 	private def static String getAbbreviatedName(String name, VisualizationLabelOptions labelOptions) {
 		switch (labelOptions) {
 			case FULLNAME: return '''«name»'''
-			case ABBREVIATED: return '''«StringUtils.abbreviateMiddle(name, "...", 10)»'''
+			case ABBREVIATED: return '''«abbreviateMiddle(name, "...", 10)»'''
 			case NONE: return ''''''
 		}
 	}
-
+	
+	private def static abbreviateMiddle(String name, String seperator, int maxLength) {
+		val nrOfChars = Math.min((maxLength - seperator.length) / 2, name.length/2);
+		return name.substring(0, nrOfChars) + seperator + name.substring(name.length - nrOfChars, name.length);
+	}
+	
 	private def static String getNodeLabel(Node n, VisualizationLabelOptions labelOptions) {
 		if (labelOptions == VisualizationLabelOptions.NONE) {
 			'''«getAbbreviatedName(n.name, labelOptions)» : «getAbbreviatedName(n.type, VisualizationLabelOptions.ABBREVIATED)»'''
