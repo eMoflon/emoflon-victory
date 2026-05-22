@@ -3,14 +3,13 @@ package org.emoflon.victory.ui.api;
 import org.emoflon.victory.ui.core.VictoryUI;
 
 /**
- * The main interaction point for any adapter to use Victory. Provides 
- * methods for initializing the Victory UI and interacting with it.
+ * The main interaction point for any adapter to use Victory. Provides methods
+ * for initializing the Victory UI and interacting with it.
  */
 public final class Victory {
 	private VictoryUI ui;
 	private final Match[] selectedMatch = new Match[1];
 
-	@SuppressWarnings("deprecation")
 	public boolean run(DataProvider dataProvider, Runnable matchProvider) {
 		if (ui != null)
 			throw new IllegalStateException("Victory has already been initialised.");
@@ -28,7 +27,7 @@ public final class Victory {
 			} catch (InterruptedException pIE) {
 			} finally {
 				if (matchProviderThread.isAlive())
-					matchProviderThread.stop();
+					matchProviderThread.interrupt();
 			}
 
 		return exitCode;
